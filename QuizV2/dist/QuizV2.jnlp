@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="QuizV2.jnlp">
+  <information>
+    <title>QuizV2</title>
+    <vendor>Admin</vendor>
+    <description>QuizV2</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="QuizV2.jar" size="20142" download="eager" />
+    <jar href="lib\ant-javafx.jar" size="1491003" download="eager" />
+    <jar href="lib\charsets.jar" size="3036965" download="eager" />
+    <jar href="lib\dt.jar" size="163047" download="eager" />
+    <jar href="lib\javafx-mx.jar" size="36044" download="eager" />
+    <jar href="lib\jce.jar" size="118047" download="eager" />
+    <jar href="lib\jconsole.jar" size="407727" download="eager" />
+    <jar href="lib\jfr.jar" size="573191" download="eager" />
+    <jar href="lib\jfxswt.jar" size="33905" download="eager" />
+    <jar href="lib\jsse.jar" size="1760615" download="eager" />
+    <jar href="lib\management-agent.jar" size="381" download="eager" />
+    <jar href="lib\packager.jar" size="4646" download="eager" />
+    <jar href="lib\resources.jar" size="3546593" download="eager" />
+    <jar href="lib\rt.jar" size="55251407" download="eager" />
+    <jar href="lib\sa-jdi.jar" size="2437800" download="eager" />
+    <jar href="lib\tools.jar" size="18272640" download="eager" />
+  </resources>
+  <jfx:javafx-desc  width="800" height="600" main-class="quizv2.QuizV2"  name="QuizV2" />
+  <update check="always"/>
+</jnlp>

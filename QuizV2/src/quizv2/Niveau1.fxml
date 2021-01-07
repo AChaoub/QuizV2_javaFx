@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<BorderPane fx:id="rootPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="880.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="quiz.java.application.v.alpha.Level_1Controller">
+   <top>
+      <Pane prefHeight="48.0" prefWidth="880.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="score_result" layoutX="521.0" layoutY="14.0" prefHeight="25.0" prefWidth="145.0" textAlignment="CENTER" textFill="RED" />
+            <Label fx:id="counter_results" layoutX="359.0" layoutY="14.0" prefHeight="25.0" prefWidth="162.0" textAlignment="CENTER" textFill="RED" />
+            <ImageView fx:id="tent1" fitHeight="26.0" fitWidth="35.0" layoutX="795.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../QUIZ-JAVA-V-ALPHA_FX/QuizJavaApplicationVAlpha/src/quiz/java/application/v/alpha/ressources/icons8-heart-50.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="tent2" fitHeight="27.0" fitWidth="35.0" layoutX="821.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../QUIZ-JAVA-V-ALPHA_FX/QuizJavaApplicationVAlpha/src/quiz/java/application/v/alpha/ressources/icons8-heart-50.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="40.0" fitWidth="504.0" layoutX="14.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../QUIZ-JAVA-V-ALPHA_FX/QuizJavaApplicationVAlpha/src/quiz/java/application/v/alpha/ressources/ce110498-b43f-477b-a040-ee51c58f171a.jpeg" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+   </top>
+   <bottom>
+      <Pane prefHeight="60.0" prefWidth="880.0" style="-fx-background-color: #c2c8d1;" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="BtnVerif" layoutX="380.0" layoutY="18.0" mnemonicParsing="false" prefWidth="120.0" text="Verifier" textAlignment="CENTER" />
+         </children>
+      </Pane>
+   </bottom>
+   <center>
+      <ScrollPane prefHeight="682.0" prefWidth="816.0" BorderPane.alignment="CENTER">
+         <content>
+            <Pane fx:id="contentPane" prefHeight="666.0" prefWidth="878.0">
+               <children>
+                  <GridPane layoutX="20.0" layoutY="24.0" prefHeight="631.0" prefWidth="730.0" vgap="10.0">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints maxHeight="159.0" minHeight="10.0" prefHeight="135.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="165.0" minHeight="0.0" prefHeight="129.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="178.0" minHeight="0.0" prefHeight="123.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="200.0" minHeight="0.0" prefHeight="120.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="164.0" minHeight="0.0" prefHeight="138.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <Pane minHeight="20.0" prefHeight="135.0" prefWidth="828.0">
+                           <children>
+                              <Label fx:id="Label1" layoutX="45.0" layoutY="6.0" prefHeight="17.0" prefWidth="567.0" text="kjsdhgkjhsdlgkjsglksdj" />
+                              <RadioButton fx:id="Radio1Q1" layoutX="64.0" layoutY="62.0" mnemonicParsing="false" text="RadioButton" />
+                              <RadioButton fx:id="Radio3Q1" layoutX="592.0" layoutY="62.0" mnemonicParsing="false" text="RadioButton" />
+                              <RadioButton fx:id="Radio2Q1" layoutX="329.0" layoutY="62.0" mnemonicParsing="false" text="RadioButton" />
+                           </children>
+                        </Pane>
+                        <Pane minHeight="20.0" prefHeight="110.0" prefWidth="640.0" GridPane.rowIndex="1">
+                           <children>
+                              <Label fx:id="Label2" layoutX="54.0" layoutY="6.0" prefHeight="17.0" prefWidth="670.0" text="khdsflkdjqhflkdqjqd" />
+                              <RadioButton fx:id="Radio1Q2" layoutX="70.0" layoutY="62.0" mnemonicParsing="false" text="RadioButton" />
+                              <RadioButton fx:id="Radio2Q2" layoutX="331.0" layoutY="50.0" mnemonicParsing="false" text="RadioButton" />
+                              <RadioButton fx:id="Radio3Q2" layoutX="600.0" layoutY="50.0" mnemonicParsing="false" text="RadioButton" />
+                           </children>
+                        </Pane>
+                        <Pane minHeight="20.0" prefHeight="110.0" prefWidth="640.0" GridPane.rowIndex="2">
+                           <children>
+                              <Label fx:id="Label3" layoutX="54.0" layoutY="6.0" prefHeight="17.0" prefWidth="670.0" text="khdsflkdjqhflkdqjqd" />
+                              <RadioButton fx:id="Radio2Q3" layoutX="332.0" layoutY="47.0" mnemonicParsing="false" text="RadioButton" />
+                              <RadioButton fx:id="Radio1Q3" layoutX="71.0" layoutY="47.0" mnemonicParsing="false" text="RadioButton" />
+                              <RadioButton fx:id="Radio3Q3" layoutX="601.0" layoutY="39.0" mnemonicParsing="false" text="RadioButton" />
+                           </children>
+                        </Pane>
+                        <Pane minHeight="25.0" prefHeight="87.0" prefWidth="640.0" GridPane.rowIndex="3">
+                           <children>
+                              <Label fx:id="Label4" layoutX="54.0" layoutY="6.0" prefHeight="17.0" prefWidth="670.0" text="khdsflkdjqhflkdqjqd" />
+                              <RadioButton fx:id="Radio1Q4" layoutX="75.0" layoutY="46.0" mnemonicParsing="false" text="RadioButton" />
+                              <RadioButton fx:id="Radio2Q4" layoutX="335.0" layoutY="46.0" mnemonicParsing="false" text="RadioButton" />
+                           </children>
+                        </Pane>
+                        <Pane prefHeight="105.0" prefWidth="750.0" GridPane.rowIndex="4">
+                           <children>
+                              <Label fx:id="Label5" layoutX="54.0" layoutY="6.0" prefHeight="17.0" prefWidth="670.0" text="khdsflkdjqhflkdqjqd" />
+                              <RadioButton fx:id="Radio1Q5" layoutX="72.0" layoutY="62.0" mnemonicParsing="false" text="RadioButton" />
+                              <RadioButton fx:id="Radio2Q5" layoutX="335.0" layoutY="55.0" mnemonicParsing="false" text="RadioButton" />
+                              <RadioButton fx:id="Radio3Q5" layoutX="602.0" layoutY="55.0" mnemonicParsing="false" text="RadioButton" />
+                           </children>
+                        </Pane>
+                     </children>
+                     <padding>
+                        <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+                     </padding>
+                  </GridPane>
+               </children>
+            </Pane>
+         </content>
+      </ScrollPane>
+   </center>
+   <right>
+      <Pane prefHeight="682.0" prefWidth="0.0" BorderPane.alignment="CENTER" />
+   </right>
+</BorderPane>
